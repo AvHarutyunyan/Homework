@@ -19,25 +19,25 @@ public class Main {
 
         //Group(Floating point number)
 
-    //7.
+   //7.
         twoFloats((float) 234.4f,(float) -24234.33f);
-    //8.
+   //8.
         twoDoubls((double) 214234.323d,(double) -23487.232d);
-    //9.
+   //9.
        floatingPointNumbersMaxMin();
-    //10.
+   //10.
         floatAndDoublCorrectValues((float)34.567839023f,(double) 8923.1234857d);
 
           //Group(Character)
-    //11.
+   //11.
         twoChars((char)'s',(char)'o');
-    //12.
+   //12.
        twoCharsAscii((char)77,(char)109);
-    //13.
+   //13.
         charSymbol((char)75,(char)'\u004B',(char)75);
 
           //Group(Boolean)
-    //14.
+   //14.
        twoBooleans((boolean) true,(boolean) false);
 
         //int year = 201|; //Int tipy pahuma miayn tvain arjeq (error)
@@ -46,17 +46,29 @@ public class Main {
           //Java Type Casting
    // 15.
         integersCast();
-    //16.
+   //16.
         myIntMyDoubleCast();
    //17.
        doubleAndIntCast();
-    //18.
+   //18.
         intAndByte();
    //19.
         findMistake();
+   //20.
+        returnNull(7,8);
+   //21.
+        returnHelloWorld(true);
+   //22.
+        char result = charReturn('A');
+        System.out.println(result);
+   //23.
+        float resultt = floatReturn((float)2.634f, (float) 234.2f);
+        System.out.println(resultt);
     }
 
     /**
+     * @param a
+     * @param b
      *1․ Ստեղծել 2 փոփոխական(byte a և byte b ),  վերագրել կամայական արժեքներ և տպել   console -ում․
      */
     public static void twoBytes(byte a, byte b) {
@@ -64,6 +76,8 @@ public class Main {
         System.out.println(b);
     }
     /**
+     * @param c
+     * @param d
      *2․ Ստեղծել 2 փոփոխական(short c և short d ),  վերագրել կամայական արժեքներ և տպել console -ում
      */
     public static void twoShorts(short c, short d) {
@@ -72,6 +86,8 @@ public class Main {
         System.out.println(d);
     }
     /**
+     * @param a
+     * @param b
      * 3․ Ստեղծել 2 փոփոխական(int e և int f ),  վերագրել կամայական արժեքներ և տպել console -ում․
      */
     public static void twoIntegers(int a, int b){
@@ -79,6 +95,8 @@ public class Main {
         System.out.println(b);
     }
     /**
+     * @param g
+     * @param h
      *4․ Ստեղծել 2 փոփոխական(long g և long h ),  վերագրել կամայական արժեքներ և տպել console -ում․
      */
     public static void twoLongs(long g ,long h ){
@@ -105,6 +123,8 @@ public class Main {
         System.out.println(minLong);
     }
     /**
+     * @param binaryByte
+     * @param binaryInt
      * 6. Ստեղծել 2  փոփոխական (byte և int ) , վերագրել կամայական արժեքներ 2-ական տեսքով  և տպել   console -ում․
      */
     public static void byteAndInt(byte binaryByte, int binaryInt ){
@@ -112,6 +132,8 @@ public class Main {
         System.out.println("Binary int value: " + binaryInt);
     }
     /**
+     * @param j
+     * @param k
      *7. Ստեղծել 2 փոփոխական(float j և float k ),  վերագրել կամայական արժեքներ և տպել console -ում․
      */
     public static void twoFloats(float j, float k){
@@ -119,6 +141,8 @@ public class Main {
         System.out.println(k);
     }
     /**
+     * @param l
+     * @param m
      *8․ Ստեղծել 2 փոփոխական(double l և double m ),վերագրել կամայական արժեքներ և տպել console -ում․
      */
     public static void twoDoubls(double l , double m){
@@ -140,6 +164,8 @@ public class Main {
         System.out.println(minDouble);
     }
     /**
+     * @param dd
+     * @param tt
      *10. Հետևյալ արժեքներից ո՞րը կարելի է վերագրել float տիպի փոփոխականին,
      * իսկ ո՞րը double-ին: 34.567839023, 12.345, 8923.1234857,  3456.091?
      */
@@ -148,6 +174,8 @@ public class Main {
         System.out.println(dd);
     }
     /**
+     * @param n
+     * @param o
      * 11․ Ստեղծել 2 փոփոխական(char n և char o ),
      *       վերագրել կամայական արժեքներ և տպել   console -ում.
      */
@@ -156,6 +184,8 @@ public class Main {
         System.out.println(o);
     }
     /**
+     * @param s
+     * @param w
      * 12. Տպել char s = 77;  և char w = 109;  արժեքները.
      */
     public static void twoCharsAscii(char s,char w){
@@ -163,6 +193,9 @@ public class Main {
         System.out.println(w);
     }
     /**
+     * @param Ascii
+     * @param Uni
+     * @param Symbol
      *13. Տպել ՛K՛ symbolը  բոլոր հնարավոր տարբերակներով.
      */
     public static void charSymbol(char Ascii, char Uni , char Symbol){
@@ -171,6 +204,8 @@ public class Main {
         System.out.println(Symbol);
     }
     /**
+     * @param p
+     * @param q
      *14․ Ստեղծել 2 փոփոխական(boolean p և boolean q )
      */
     public static void twoBooleans(boolean p , boolean q){
@@ -243,6 +278,41 @@ public class Main {
         int ms = 11;
         ms = ns;
         System.out.println(ms);
+
+    }
+    /**
+     * @param u
+     * @param y
+     * @return
+     *20. Write a method which has two input parameters: type  int and return 0.
+     */
+    public static int returnNull(int u, int y){
+        return 0;
+    }
+    /**
+     * @param tr
+     * @return
+     *21. Write a method which has boolean input parameters  and print “Hello World”.
+     */
+    public static void returnHelloWorld(boolean tr ){
+        System.out.println("Hello World!");
+    }
+    /**
+     * @param rr
+     * @return
+     *22. Write a method which has a char input parameter  and return this  input parameter.
+     */
+    public static char charReturn(char rr){
+        return rr;
+    }
+    /**
+     * @param cc
+     * @param fg
+     * @return
+     * 23. Write a method which has  two float input parameters  and return  one of them.
+     */
+    public static float floatReturn(float cc , float fg){
+        return cc;
     }
 
 }
