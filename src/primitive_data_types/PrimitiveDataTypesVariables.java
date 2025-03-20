@@ -30,6 +30,16 @@ public class PrimitiveDataTypesVariables {
         int hj = 2;
         ++hj;
         System.out.println(hj);
+
+        int j = 7;
+
+
+
+        while (j > 0){
+            System.out.println(j);
+            j--;
+        }
+
     }
 
     /**

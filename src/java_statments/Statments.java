@@ -236,6 +236,13 @@ public class Statments {
         return multiple;
     }
 
+    /**
+     * find Averge
+     *
+     * @param n
+     * @return
+     */
+
     public static double findAverge(double n) {
         double max = n;
         int min = 1;
