@@ -52,7 +52,8 @@ public class Test {
             for (int i = s.length - 1; i >= 0; i--) {
                 System.out.println(s[i]);
             }
-
+            String sa= ",s ";
+            double test = 0XE;
         }
     }
 }
