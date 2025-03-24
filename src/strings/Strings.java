@@ -32,6 +32,9 @@ public class Strings {
         strings.printSubLine("Hello World", 5);
         strings.emptyOrNot();
 
+        String s = new String("ss");
+        s= "ff";
+        System.out.println(s);
 
     }
 

@@ -21,11 +21,7 @@ public class Classes {
         this.country = country;
         this.name = name;
     }
-    int c;
-    {
-        System.out.println("barev");
-        c = 32;
-    }
+
     public void personInfo() {
         System.out.println("country:" + country + " ID:" + id + " Age:" + age + " Name:" + name);
     }

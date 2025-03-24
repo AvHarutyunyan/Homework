@@ -1,5 +1,6 @@
 package test_code;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -17,6 +18,11 @@ public class Arrays2 {
         arrays2.changeBox();
         arrays2.sortingArray();
         arrays2.matrix();
+        int [] numbers = new int[] {3,2,1};
+//        System.out.println(Arrays.binarySearch(numbers, 2));
+//        System.out.println(Arrays.binarySearch(numbers, 2));
+        ArrayList<String> g = new ArrayList<>();
+
     }
 
     /**

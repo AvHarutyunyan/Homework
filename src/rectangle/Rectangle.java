@@ -5,21 +5,22 @@ import java.rmi.MarshalException;
  * @author aveth
  */
 public class Rectangle {
-    int length;
-    int width;
+   public int length;
+   public int width;
 
     /**
      * print area of rectangle
      */
-    public void areaOfRectangle(){
-        System.out.println(length * width);
+    public int areaOfRectangle(){
+        return length * width;
     }
 
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle();
         rectangle.length = 14;
         rectangle.width = 5;
-        rectangle.areaOfRectangle();
+        int result = rectangle.areaOfRectangle();
+        System.out.println(result);
     }
 }
 
