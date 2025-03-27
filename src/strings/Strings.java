@@ -76,7 +76,7 @@ public class Strings {
     public int countOccurrences(String text, String token) {
         int count = 0;
         int index = 0;
-        while ((index = text.indexOf(token, index)) != -1) {
+        while ((text.indexOf(token, index)) != -1) {
             count++;
             index += token.length();
         }

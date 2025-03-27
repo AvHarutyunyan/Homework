@@ -1,5 +1,6 @@
 package test_code;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /**
@@ -11,7 +12,11 @@ import java.util.Scanner;
 public class MiniGame {
 
     public static void main(String[] args) {
-
+//        int [] s = new int[]{1,3,5,2};
+//        int max
+//        for (int i = 0; i <s.length ; i++) {
+//            System.out.println(s[i]=Integer.MIN_VALUE);
+//        }
         Scanner scanner = new Scanner(System.in);
         System.out.print("Choose Y/N to start the game: ");
         char choose = scanner.next().charAt(0);
@@ -40,6 +45,9 @@ public class MiniGame {
             number = scanner.nextInt();
 
         } while ((choose == 'Y' || choose == 'N') && number != 0);
+
+
+
 
     }
 }

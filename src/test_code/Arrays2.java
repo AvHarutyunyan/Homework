@@ -18,13 +18,13 @@ public class Arrays2 {
         arrays2.changeBox();
         arrays2.sortingArray();
         arrays2.matrix();
-        int [] numbers = new int[] {3,2,1};
+        int[] numbers = new int[]{3, 2, 1};
 //        System.out.println(Arrays.binarySearch(numbers, 2));
 //        System.out.println(Arrays.binarySearch(numbers, 2));
         ArrayList<String> g = new ArrayList<>();
 
-    }
 
+    }
     /**
      * Write method which print reverse of these strings
      */
@@ -97,7 +97,6 @@ public class Arrays2 {
             if (s[i].contains("cat")) {
                 System.out.println(kk);
             }
-
         }
     }
 
@@ -144,7 +143,6 @@ public class Arrays2 {
             System.out.println();
 
         }
-
 
     }
 }

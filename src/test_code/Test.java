@@ -2,8 +2,16 @@ package test_code;
 
 import java.util.Scanner;
 
+/**
+ * just mixed codes
+ *
+ * @author aveth
+ */
 public class Test {
     public static void main(String[] args) {
+        Test obj = new Test();
+        obj.a23(5);
+
         Scanner scanner = new Scanner(System.in);
         int switchday;
         System.out.println((8 > 9) ? ((10 > 9) ? 10 : 5) : 2);
@@ -42,8 +50,8 @@ public class Test {
             }
             scanner.close();
             /**
-             *  2. Գրել method, որը տպում է short[] s  array-ի էլեմենտները հակառակ հերթականությամբ
-             *         Օրինակ՝ ( 257 -> 752)․
+             *2 Write a method that prints the elements of the short[] s array in reverse order
+             * For example: ( 257 -> 752)․
              */
             short[] s = new short[3];
             s[0] = 3;
@@ -52,8 +60,19 @@ public class Test {
             for (int i = s.length - 1; i >= 0; i--) {
                 System.out.println(s[i]);
             }
-            String sa= ",s ";
+            String sa = ",s ";
             double test = 0XE;
+        }
+    }
+
+    /**
+     * multiplication table
+     *
+     * @param a
+     */
+    public void a23(int a) {
+        for (int i = 1; i < 11; i++) {
+            System.out.println(i + " * " + a + " = " + i * a);
         }
     }
 }

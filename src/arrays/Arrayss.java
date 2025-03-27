@@ -38,9 +38,12 @@ public class Arrayss {
         int[] numberss = {3, 1, 2, 4, 7, 8, 5, 6};
         obj.oddNumber(numberss);
         System.out.println(Arrays.toString(numberss));
+        obj.twins();
+
+
 
         double[] numbersss = {0.0, 1.5, 2.3, 0.0, 4.6, 0.0, 7.8};
-        System.out.println(Arrays.toString(removeZeros(numbersss)));
+      //  System.out.println(Arrays.toString(removeZeros(numbersss)));
     }
 
     /**
@@ -107,6 +110,8 @@ public class Arrayss {
         }
         return ss;
     }
+
+
 
     /**
      * arrays of the same size, adds the corresponding elements of the arrays, and writes them into a third array.
@@ -192,7 +197,7 @@ public class Arrayss {
      *
      * @param numbers
      */
-    public static double[] removeZeros(double[] numbers) {
+    public double[] removeZeros(double[] numbers) {
         ArrayList<Double> list = new ArrayList<>();
 
         for (double num : numbers) {
@@ -202,6 +207,31 @@ public class Arrayss {
         }
 
         return list.stream().mapToDouble(Double::doubleValue).toArray();
+    }
+
+    /**
+     * For a given square matrix of natural numbers, print YES if the sum of the elements in all its rows is even.
+     */
+    public void twins(){
+        int [][] s = new int[][]{
+                {-1, 2, 3},
+                {4, -5, 6},
+                {7, 8, -9}
+        };
+        int sum = 0;
+        for (int i = 0; i < s.length ; i++) {
+           for (int j = 0; j < s[i].length; j++) {
+              sum += s[i][j];
+               System.out.println("s[" + i + "][" + j + "] = " + s[i][j] + ", Current sum: " + sum);
+
+           }
+        }
+        if (sum % 2 == 0) {
+            System.out.println("YES");
+        } else {
+            System.out.println("false");
+        }
+
     }
 
 }
