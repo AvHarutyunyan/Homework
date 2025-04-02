@@ -1,4 +1,5 @@
 package operation;
+import java.util.*;
 
 public class Operation {
     public static void main(String[] args) {
@@ -43,7 +44,11 @@ public class Operation {
         orResult(8,3);
         questionMark(8,3);
         xorIntegerBX(3);
+        ArrayList<String> safer = new ArrayList<>();
+        safer.add("sparrow");
+        safer.add(1,"gg");
     }
+
     /**
      *            Assignment Operator
      * Print the answers to the following expressions in the console:

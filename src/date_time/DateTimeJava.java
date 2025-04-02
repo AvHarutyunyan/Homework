@@ -1,8 +1,10 @@
 package date_time;
 
 
+import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoUnit;
 
 /**
@@ -19,6 +21,7 @@ public class DateTimeJava {
         dateTimeJava.format();
         dateTimeJava.DurationBetweenDates();
         dateTimeJava.specificDate();
+        dateTimeJava.parseDateToString();
     }
 
     /**
@@ -76,8 +79,8 @@ public class DateTimeJava {
      * Write a program to parse a date string using the SimpleDateFormat class.
      */
     public void DurationBetweenDates(){
-        LocalDate startDate = LocalDate.of(2025, 3, 1); // 1 March 2025
-        LocalDate endDate = LocalDate.of(2025, 3, 28); // 28 March 2025
+        LocalDate startDate = LocalDate.of(2025, 3, 1);
+        LocalDate endDate = LocalDate.of(2025, 3, 28);
         long daysBetween = ChronoUnit.DAYS.between(startDate, endDate);
         System.out.println("The duration between the two dates is: " + daysBetween + " days.");
     }
@@ -89,9 +92,18 @@ public class DateTimeJava {
     public void specificDate(){
         LocalDateTime date = LocalDateTime.of(2017,Month.APRIL,3 ,3,30);
         System.out.println("dateTime is: " + date);
-        ZoneId zoneId = ZoneId.of("Asia/Yerevan");
+        ZoneId zoneId = ZoneId.of("Europe/London");
         ZonedDateTime zonedDateTime = ZonedDateTime.of(date , zoneId);
         System.out.println("The ZonedDataTime: " + zonedDateTime);
+    }
+    /**
+     *	Write a program to parse a date string using the SimpleDateFormat class.
+     */
+    public void parseDateToString(){
+        LocalDate date = LocalDate.of(2004,Month.APRIL,4);
+        DateTimeFormatter simpleDateFormat = DateTimeFormatter.ofPattern("YYYY MMMM d");
+        String format = date.format(simpleDateFormat);
+        System.out.println(format);
     }
 
 }

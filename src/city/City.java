@@ -19,22 +19,22 @@ public class City {
     public static void main(String[] args) {
         City yerevan = new City();
         yerevan.code = 'y';
-        yerevan.population = 1100000;
+        yerevan.population = 1_100_000;
         yerevan.cityMethod();
 
         City moscow = new City();
         moscow.code = 'm';
-        moscow.population = 12737400;
+        moscow.population = 1_273_400;
         moscow.cityMethod();
 
         City newYork = new City();
         newYork.code = 'n';
-        newYork.population = 7936530;
+        newYork.population = 7_936_530;
         newYork.cityMethod();
 
         City paris = new City();
         paris.code = 'p';
-        paris.population = 11347000;
+        paris.population = 1_1347_000;
         paris.cityMethod();
 
     }
