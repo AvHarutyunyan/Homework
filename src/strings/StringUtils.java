@@ -1,16 +1,13 @@
 package strings;
 
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import java.util.SplittableRandom;
-
 /**
  * Write methods for string
  *
  * @author aveth
  */
-public class Strings {
+public class StringUtils {
     public static void main(String[] args) {
-        Strings strings = new Strings();
+        StringUtils strings = new StringUtils();
         strings.concatenation();
         strings.literal(" we\n are\n living\n in");
         strings.reverses();
