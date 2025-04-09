@@ -1,46 +1,52 @@
 package strings;
 
+import java.nio.channels.NotYetBoundException;
+
 public class MyString {
+    private char[] characters;
 
-public Object text;
-
-    MyString(Object text){
-        this.text = text;
-    }
-
-    /**
-     * print lenght of text
-     */
-    public void lenght(){
-        System.out.println(text.toString().length());
-    }
-
-    /**
-     * print  reserve lenght of text
-     */
-    public void reserve(){
-        for (int i = text.toString().length() - 1 ; i >= 0 ; i--) {
-            System.out.print(text.toString().charAt(i));
+    // Constructor - պահում ենք տողը որպես սիմվոլների զանգված
+    public MyString(String input) {
+        characters = new char[input.length()];
+        for (int i = 0; i < input.length(); i++) {
+            characters[i] = input.charAt(i);
         }
-        System.out.println();
     }
 
-    /**
-     * print text indexOf with char
-     */
-    public void indexOf(char ch){
-        int x;
-        System.out.println(text.toString().indexOf(ch));
+    // Տողում սիմվոլների քանակը
+    public int length() {
+        return characters.length;
+    }
+
+    // Տողի հակառակ տարբերակը վերադարձնում է որպես String
+    public String reverse() {
+        StringBuilder reversed = new StringBuilder();
+        for (int i = characters.length - 1; i >= 0; i--) {
+            reversed.append(characters[i]);
+        }
+        return reversed.toString();
+    }
+
+    // Տրված սիմվոլի ինդեքսը, եթե չկա՝ -1
+    public int indexOf(char c) {
+        for (int i = 0; i < characters.length; i++) {
+            if (characters[i] == c) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
         MyString m = new MyString("Hello");
-        m.lenght();
-        m.reserve();
-        m.indexOf('h');
-    }
+        m.length();
+        m.reverse();
+        m.indexOf('H');
 
+    }
 }
+
+
 
 
 

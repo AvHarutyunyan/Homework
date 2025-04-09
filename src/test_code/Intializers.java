@@ -20,6 +20,9 @@ public class Intializers {
         f.add(9);
         Collections.sort(f);
         System.out.println(f);
+
+        int e = 7;
+        System.out.println(e * (5-1));
     }
     static { //1
         System.out.println("Hello");

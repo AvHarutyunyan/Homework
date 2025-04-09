@@ -24,8 +24,8 @@ public class Car {
     private char engineType ;
 
     Car(int passengerCount , char engineType){
-       setPassengerCount(passengerCount);
-        setEngineType(engineType);
+       this.passengerCount = passengerCount;
+       this.engineType = engineType;
     }
     public int getPassengerCount() {
         return passengerCount;
@@ -78,5 +78,10 @@ class Truck extends Car {
         System.out.println("s1 = " + s1);
         System.out.println("s2 = " + s2);
         System.out.println("s3 = " + s3);
+    }
+}
+class Animal {
+    void makeSound() {
+        System.out.println("Some generic animal sound");
     }
 }
