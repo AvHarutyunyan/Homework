@@ -1,20 +1,30 @@
-public class test {
-    static String h = "High School";
-    String name = "Anush";
+import javax.xml.stream.StreamFilter;
 
-    public  test(String name){
-        this.name = name;
-    }
-
-    void  display(){
-        System.out.println("Sovorum en " + name + h);
-    }
-    public static void main(String[] args) {
-        test hs = new test("Vazgen");
-        test j = new test("Kayot");
-        hs.display();
-        j.display();
-        hs = new test("sok");
-        hs.display();
+class Animal {
+    void sound() {
+        System.out.println("Some animal sound");
     }
 }
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Bark");
+    }
+
+    public static void main(String[] args) {
+        Animal animal = new Dog();
+        animal.sound();
+        Animal animal2 = new Cat();
+        animal2.sound();
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Meow");
+    }
+
+}
+
