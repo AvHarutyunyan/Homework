@@ -33,11 +33,29 @@ class Dogs extends Animals {
         System.out.println("Cats not available in Dogs class.");
     }
 
-    public static void main(String[] args) {
+ /*   public static void main(String[] args) {
         Animals animals1 = new Dogs();
         animals1.dogs();
 
         Animals animals2 = new Cats();
         animals2.cats();
+
+        String g = new String("kj");
+        System.out.println(new String("ds"));
+        System.out.println(g);
+
     }
-}
+*/}
+  abstract class Bird {
+ private void fly() { System.out.println("Bird is flying"); }
+// public static void main(String[] args) {
+// Bird bird = new Pelican();
+// bird.fly();
+ }
+
+ class Pelican extends Bird {
+ protected void fly() { System.out.println("Pelican is flying"); }
+     public static void main(String[] args) {
+         Bird bird = new Pelican();
+     }
+ }

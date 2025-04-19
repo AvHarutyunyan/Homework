@@ -1,4 +1,7 @@
+import java.io.FileReader;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.random.RandomGenerator;
 
 public abstract class Testtt {
     abstract void sound();
@@ -29,10 +32,25 @@ class Dogo extends Testtt {
         return 234;
     }
 
-    public static void main(String[] args) {
+ /*   public static void main(String[] args) {
+
+
+
         Testtt testtt = new Dogo();
         testtt.sound();
         testtt.fag();
         System.out.println(testtt.hoko());
+   */ }
+//}
+
+class DatabaseUnavailableException extends Exception {
+        public DatabaseUnavailableException(String msg) {
+            super(msg);
+        }
+        public static void main(String[] args) {
+            DatabaseUnavailableException d = new DatabaseUnavailableException("Error Meesage");
+            System.out.println(d);
+        }
+
     }
-}
+
