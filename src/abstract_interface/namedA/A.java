@@ -8,6 +8,7 @@ package abstract_interface.namedA;
  * @author Aveth
  */
 public interface A {
+
     void methodOne();
 
     void methSecond();

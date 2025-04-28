@@ -37,8 +37,12 @@ public class Homework11 {
     }
 
     public static void main(String[] args) {
-        Homework11 homework11 = new Homework11();
-        int count = homework11.operationsOfText();
-        System.out.println("\nNumber of vowels: " + count);
+//        Homework11 homework11 = new Homework11();
+//        int count = homework11.operationsOfText();
+//        System.out.println("\nNumber of vowels: " + count);
+
+        String s = "jsf";
+        String g = "jsf";
+        System.out.println(g == s);
     }
 }

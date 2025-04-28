@@ -1,10 +1,12 @@
 package employee;
 
+import exceptions.Homework7;
+
 /**
  * Create 3 employees (2 boys and 1 girl), two of whom work in the same department and are the same age.
  * @author aveth
  */
-public class Employee {
+public class Employee  {
 
 public int id;
 public int departmentNumber;

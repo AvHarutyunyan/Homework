@@ -11,36 +11,34 @@ import java.util.Scanner;
  */
 public class Homework3 {
 
-    Scanner scanner = new Scanner(System.in);
-
-    public void readNumbers() {
+    public int readNumbers(int number1,int number2) {
         int result;
 
-        int number1 = scanner.nextInt();
-        System.out.print("Write second number (not zero!) ");
+      try {
+         result = number1/number2;
+             // throw new IllegalArgumentException("Error message");
+      } catch (ArithmeticException e) {
+          throw new RuntimeException("Cannot divide to zero " + e.getMessage());
+      }
 
-        if (number1 == 0) {
-            throw new IllegalArgumentException("Error message");
-        }
-        int number2 = scanner.nextInt();
-
-        if (number2 == 0) {
-            throw new IllegalArgumentException("Error message");
-        } else {
-            result = number1 % number2;
-            System.out.print("Cool! the Result of numbers is: " + result);
-
-            scanner.close();
-        }
-    }
-
-    static {
-        System.out.print("Write number (not zero!) ");
+            return result;
     }
 
     public static void main(String[] args) {
         Homework3 homework3 = new Homework3();
-        homework3.readNumbers();
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.print("Write number (not zero!) ");
+        int number1 = scanner.nextInt();
+
+
+
+        System.out.print("Write second number (not zero!) ");
+        int number2 = scanner.nextInt();
+
+        homework3.readNumbers(number1,number2);
+        scanner.close();
 
     }
 

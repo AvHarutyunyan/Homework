@@ -32,25 +32,49 @@ class Dogo extends Testtt {
         return 234;
     }
 
- /*   public static void main(String[] args) {
+//    public static void main(String[] args) {
+//
+//    }
 
-
-
-        Testtt testtt = new Dogo();
-        testtt.sound();
-        testtt.fag();
-        System.out.println(testtt.hoko());
-   */ }
-//}
-
-class DatabaseUnavailableException extends Exception {
-        public DatabaseUnavailableException(String msg) {
-            super(msg);
-        }
-        public static void main(String[] args) {
-            DatabaseUnavailableException d = new DatabaseUnavailableException("Error Meesage");
-            System.out.println(d);
+    public static void exception() throws NullPointerException {
+        String h = null;
+        int x = Integer.parseInt(h);
+        if (h == null) {
+            System.out.println("Bad");
         }
 
     }
 
+
+    }
+ class Laptop {
+ public void start() {
+        try {
+             System.out.print("Starting up ");
+             throw new Exception();
+             } catch (Exception e) {
+             System.out.print("Problem ");
+            // System.exit(0);
+             } finally {
+             System.out.print("Shutting down ");
+             }
+         }
+
+}
+
+
+ class Dogs {
+ public String name;
+  public void parseName() {
+         System.out.print("1");
+         try {
+         System.out.print("2");
+         int x = Integer.parseInt(name);
+         System.out.print("3");
+         } catch (NumberFormatException e) {
+         System.out.print("4");
+         }
+         }
+ public static void main(String[] args) {
+     System.out.println(5/0);
+         } }

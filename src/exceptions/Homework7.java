@@ -1,5 +1,7 @@
 package exceptions;
 
+import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -10,11 +12,25 @@ import java.util.Scanner;
  * @author Avet
  */
 public class Homework7 {
-    public static void main(String[] args) {
-        System.out.print("input your age! ");
-        Homework7 homework7 = new Homework7();
-        homework7.checkNumber();
+    Homework7() {
+        System.out.println(9);
     }
+   public static void main(String[] args) {
+       try {
+           throw new ClassCastException();
+       } catch (IllegalArgumentException e) {
+           throw new IllegalArgumentException();
+       } catch (RuntimeException e) {
+           throw new NullPointerException();
+       } finally {
+           throw new RuntimeException();
+       }
+
+   }
+    {
+        System.out.println("ad");
+    }
+    static {}
 
     public void checkNumber() {
         try {
@@ -31,4 +47,19 @@ public class Homework7 {
             System.out.println("Error: " + e.getMessage());
         }
     }
+
+    public static int sum(int k) {
+        if (k > 0) {
+            return k + sum(k - 1);
+        } else {
+            return 0;
+        }
+    }
+    public static void test(int... n) {
+        System.out.println(n[0]); // 1
+    }
+
+
+
 }
+
