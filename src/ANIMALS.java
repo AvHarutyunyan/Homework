@@ -12,13 +12,20 @@ public interface ANIMALS {
         return 12333l;
     }
 
+    static  void sd(){
+        System.out.println("w");
+    }
+
 }
 
+
 class DogD implements ANIMALS {
-    public static void main(String[] args) {
+
+    public static void main(String... $) {
         ANIMALS animals = new DogD();
         animals.sound();
         animals.bazaraEle();
+        ANIMALS.sd();
     }
 }
 

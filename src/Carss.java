@@ -1,5 +1,3 @@
-import oop.car.Car;
-
 public class Carss {
     public String model;
     public String brand;

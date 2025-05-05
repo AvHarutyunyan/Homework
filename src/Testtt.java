@@ -46,35 +46,36 @@ class Dogo extends Testtt {
     }
 
 
-    }
+}
+
  class Laptop {
- public void start() {
-        try {
-             System.out.print("Starting up ");
-             throw new Exception();
-             } catch (Exception e) {
-             System.out.print("Problem ");
-            // System.exit(0);
-             } finally {
-             System.out.print("Shutting down ");
-             }
-         }
+
+    public void aVoid() {
+        System.out.println("barev");
+    }
+
+    public void vah(){
+        System.out.println("hi");
+    }
 
 }
 
 
- class Dogs {
- public String name;
-  public void parseName() {
-         System.out.print("1");
-         try {
-         System.out.print("2");
-         int x = Integer.parseInt(name);
-         System.out.print("3");
-         } catch (NumberFormatException e) {
-         System.out.print("4");
-         }
-         }
- public static void main(String[] args) {
-     System.out.println(5/0);
-         } }
+class Dogs extends Laptop {
+
+    @Override
+    public void aVoid(){
+        System.out.println("aVoid");
+    }
+    public void gigaChad(){
+        System.out.println("i'm hi");
+    }
+    public static void main(String[] args) {
+        System.out.println(args[1]);
+       Laptop dogs = new Dogs();
+       dogs.vah();
+       dogs.aVoid();
+
+    }
+
+}

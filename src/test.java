@@ -1,27 +1,40 @@
 import javax.imageio.metadata.IIOMetadataFormatImpl;
 import javax.xml.stream.StreamFilter;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 /**
  * mixture of test codes
+ *
  * @author Avet
  */
-class Animal {
+ class Animal {
+    int vahan = 34;
+    Animal(String s){
+        System.out.println("barev");
+    }
     void sound() {
         System.out.println("Some animal sound");
     }
 }
 
 class Dog extends Animal {
+    Dog(){
+        super("");
+    }
     @Override
     void sound() throws RuntimeException {
         System.out.println("Bark");
     }
 
-    public static void main(String[] args) {
+ /*   public static void main(String[] args) {
         Animal animal = new Dog();
         animal.sound();
+
 
         Animal animal2 = new Cat();
         animal2.sound();
@@ -78,7 +91,10 @@ class Dog extends Animal {
         }
         System.out.println(count_1);
         System.out.println(count_2);
-   }
+
+
+
+    }
 
 
 
@@ -94,12 +110,39 @@ class Dog extends Animal {
     }
 
 
+
+ */
 }
 
-class Cat extends Animal {
+ class Cat extends Animal {
+    int count = 24;
+    static int d= 45;
+
+
+
+    Cat(){
+        super("dr");
+    }
     @Override
     void sound() {
         System.out.println("Meow");
+        super.vahan = 234;
+        System.out.println(vahan);
     }
-}
 
+
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public static void main(String[] args) {
+    Animal animal = new Cat();
+    animal.sound();
+    }
+
+}

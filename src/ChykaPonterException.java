@@ -1,7 +1,3 @@
-import abstract_interface.namedA.A;
-
-import java.util.Locale;
-
 public class ChykaPonterException extends RuntimeException {
 
     ChykaPonterException(String message){
