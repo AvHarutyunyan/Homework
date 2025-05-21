@@ -1,5 +1,7 @@
 package abstract_interface_1.homework_8;
 
+import java.util.Arrays;
+
 /**
  * 	An abstract class has a construtor which prints "This is constructor of abstract class",
  * 	an abstract method named 'a_method' and a non-abstract method which prints "This is a normal method of abstract class".
@@ -17,16 +19,26 @@ public abstract class AbstractTest {
     void concreteMethod() {
         System.out.println("This is a normal method of abstract class");
     }
+
+
 }
 
 class A extends AbstractTest {
+
+
     void a_method() {
         System.out.println("This is abstract method");
     }
 
+    void vhh(){
+        System.out.println("sjd");
+    }
+
     public static void main(String[] args) {
-        AbstractTest abstractTest = new A();
-        abstractTest.a_method();
-        abstractTest.concreteMethod();
+      int [] ijii = new int[] {23,43,3,4};
+      Arrays.sort(ijii);
+        for (int i = 0; i < ijii.length ; i++) {
+            System.out.println(ijii[i]);
+        }
     }
 }

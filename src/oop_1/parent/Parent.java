@@ -15,6 +15,7 @@ public class Parent {
     public static void main(String[] args) {
         Parent parent = new Child();
         parent.showMessage();
+
     }
 }
 class Child extends Parent{
@@ -22,5 +23,8 @@ class Child extends Parent{
     public void showMessage() {
         super.showMessage();
         System.out.println("Hello Child class");
+    }
+    void vahan(){
+        System.out.println("vahan");
     }
 }

@@ -17,6 +17,7 @@ public class Parent {
 }
 
 class Child extends Parent {
+
     @Override
     public void showMessage() {
         System.out.println("Hello Child class");
@@ -34,5 +35,8 @@ class Child extends Parent {
     public static void main(String[] args) {
         Child child = new Child();
         child.printBothMethods();
+
+        Parent parent = new Child();
+        parent.showMessage();
     }
 }

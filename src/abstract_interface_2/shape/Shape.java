@@ -60,4 +60,5 @@ class Square extends Shape {
         shape3.draw();
         shape3.erase();
     }
+
 }

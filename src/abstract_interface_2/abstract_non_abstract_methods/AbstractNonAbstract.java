@@ -8,6 +8,7 @@ package abstract_interface_2.abstract_non_abstract_methods;
  * @author Avet
  */
 public abstract class AbstractNonAbstract {
+    int h = 3;
     AbstractNonAbstract(){
         System.out.println("This is constructor of abstract class");
     }
@@ -18,6 +19,7 @@ public abstract class AbstractNonAbstract {
 }
 class SubClass extends AbstractNonAbstract {
     public void aMethod(){
+        super.h = 7;
         System.out.println("This is abstract method");
     }
 

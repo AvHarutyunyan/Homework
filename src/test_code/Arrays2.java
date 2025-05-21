@@ -24,6 +24,7 @@ public class Arrays2 {
         ArrayList<String> g = new ArrayList<>();
 
 
+
     }
     /**
      * Write method which print reverse of these strings

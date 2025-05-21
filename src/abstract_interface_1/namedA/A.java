@@ -1,4 +1,5 @@
 package abstract_interface_1.namedA;
+import java.time.LocalTime;
 
 /**
  * Write a program to create interface A.
@@ -9,14 +10,18 @@ package abstract_interface_1.namedA;
  */
 public interface A {
 
+
+
     void methodOne();
 
     void methSecond();
 }
 
 class MyClass implements A {
+
+
     @Override
-    public void methodOne() {
+    public void methodOne()  {
         System.out.println("This is a methOne method");
     }
 
@@ -26,8 +31,19 @@ class MyClass implements A {
     }
 
     public static void main(String[] args) {
-        A a = new MyClass();
-        a.methodOne();
-        a.methSecond();
+      char[] array_variable = new char[10];
+        for (int i = 0; i < 10; i++) {
+            array_variable[i] = 'i';
+            System.out.println(array_variable[i] + "");
+           // i++;
+        }
+    }
+
+}
+class ASA{
+    public static void main(String[] args) {
+       A a = new MyClass();
+
     }
 }
+

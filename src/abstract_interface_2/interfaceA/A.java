@@ -6,7 +6,7 @@ package abstract_interface_2.interfaceA;
  * Implements this interface in another class named MyClass.
  * @author Avet
  */
-public interface A {
+public  interface A {
     void methOne();
     void methSecond();
 }

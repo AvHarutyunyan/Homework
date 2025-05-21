@@ -1,6 +1,6 @@
 package test_code;
 
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * just mixed codes
@@ -9,12 +9,121 @@ import java.util.Scanner;
  */
 public class Test {
     public static void main(String[] args) {
-        Test obj = new Test();
-        obj.a23(5);
+
+        Test test = new Test();
+
+
+
+        Queue<Integer> integers = new Queue<Integer>() {
+            @Override
+            public Spliterator<Integer> spliterator() {
+                return Queue.super.spliterator();
+            }
+
+            @Override
+            public boolean add(Integer integer) {
+                return false;
+            }
+
+            @Override
+            public boolean offer(Integer integer) {
+                return false;
+            }
+
+            @Override
+            public Integer remove() {
+                return 0;
+            }
+
+            @Override
+            public Integer poll() {
+                return 0;
+            }
+
+            @Override
+            public Integer element() {
+                return 0;
+            }
+
+            @Override
+            public Integer peek() {
+                return 0;
+            }
+
+            @Override
+            public int size() {
+                return 0;
+            }
+
+            @Override
+            public boolean isEmpty() {
+                return false;
+            }
+
+            @Override
+            public boolean contains(Object o) {
+                return false;
+            }
+
+            @Override
+            public Iterator<Integer> iterator() {
+                return null;
+            }
+
+            @Override
+            public Object[] toArray() {
+                return new Object[0];
+            }
+
+            @Override
+            public <T> T[] toArray(T[] a) {
+                return null;
+            }
+
+            @Override
+            public boolean remove(Object o) {
+                return false;
+            }
+
+            @Override
+            public boolean containsAll(Collection<?> c) {
+                return false;
+            }
+
+            @Override
+            public boolean addAll(Collection<? extends Integer> c) {
+                return false;
+            }
+
+            @Override
+            public boolean removeAll(Collection<?> c) {
+                return false;
+            }
+
+            @Override
+            public boolean retainAll(Collection<?> c) {
+                return false;
+            }
+
+            @Override
+            public void clear() {
+
+            }
+        };
+
+//        int [] x = new int[3];
+//        x[0]= 1;
+//        x[1] = 2;
+//        x[2] = 3;
+//
+//        for (int i = x.length -1; i >= 0 ; i--) {
+//            System.out.println(x[i]);
+//        }
+
 
         Scanner scanner = new Scanner(System.in);
         int switchday;
-        System.out.println((8 > 9) ? ((10 > 9) ? 10 : 5) : 2);
+//      System.out.println((8 > 9) ? ((10 > 9) ? 10 : 5) : 2);
         while (true) {
             System.out.print("Enter a number (1-7), or 0 to exit: ");
             switchday = scanner.nextInt();
@@ -48,7 +157,7 @@ public class Test {
                 default:
                     System.out.println("❌ Not correct value! Try again.\n");
             }
-            scanner.close();
+            //scanner.close();
             /**
              *2 Write a method that prints the elements of the short[] s array in reverse order
              * For example: ( 257 -> 752)․
@@ -61,7 +170,7 @@ public class Test {
                 System.out.println(s[i]);
             }
             String sa = ",s ";
-            double test = 0XE;
+            double testValue = 0XE;
         }
     }
 
@@ -75,4 +184,8 @@ public class Test {
             System.out.println(i + " * " + a + " = " + i * a);
         }
     }
+}
+
+class Student{
+
 }
